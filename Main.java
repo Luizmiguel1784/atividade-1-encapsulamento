@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
 		
 		Pessoa pe = new Pessoa("nome", 0);
 		
@@ -14,10 +14,15 @@ public class Main {
 		pe.setNome(sc.next());
 		pe.setIdade(sc.nextInt());;
 		
-		if()
+		if(pe.getIdade() < 0) {
+			System.out.println("Essa idade não é valida");
+		}else {
+			System.out.println("Sua idade é valida");
+		}
 		
 		
 		sc.close();
 	}
 
 }
+
